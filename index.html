@@ -1,0 +1,59 @@
+export default function Portfolio() {
+  return (
+    <div className="p-6 max-w-4xl mx-auto">
+      <h1 className="text-4xl font-bold mb-4">Carlos Saldaña - Networking Portfolio</h1>
+      <p className="text-lg mb-6">Networking professional with CCNA certification and hands-on experience in network configuration, security practices, and cloud fundamentals.</p>
+
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-2">Certifications</h2>
+        <ul className="list-disc list-inside">
+          <li>Cisco Certified Network Associate (CCNA)</li>
+          <li>Google IT Support Certificate</li>
+        </ul>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-2">Skills Snapshot</h2>
+        <ul className="list-disc list-inside columns-2">
+          <li>TCP/IP, VLANs, Subnetting</li>
+          <li>Static & Dynamic Routing</li>
+          <li>ACLs, NAT</li>
+          <li>Cisco Routers & Switches (Packet Tracer / GNS3)</li>
+          <li>Firewalls (basic concepts)</li>
+          <li>Ubuntu Server, Windows Server (basic config)</li>
+          <li>AWS/GCP (cloud basics)</li>
+          <li>Wireshark, Nmap, Netcat</li>
+          <li>Security: VPNs, Hardening basics</li>
+        </ul>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-2">Projects</h2>
+        <div className="space-y-4">
+          <div>
+            <h3 className="font-bold">Network Simulation Lab (CCNA Practice)</h3>
+            <p>Designed and configured a small office network using Cisco Packet Tracer. Implemented VLANs, inter-VLAN routing, DHCP, and ACLs. Configured RIP and OSPF.</p>
+          </div>
+          <div>
+            <h3 className="font-bold">Ubuntu Server Project</h3>
+            <p>Installed and configured Ubuntu Server in a VM. Set up static IP, SSH, and UFW firewall. Tested file sharing and local DNS resolution.</p>
+          </div>
+          <div>
+            <h3 className="font-bold">CCTV and VoIP Setup (Real-World Experience)</h3>
+            <p>Installed and maintained IP cameras. Handled LAN routing and basic connectivity for CCTV and VoIP systems.</p>
+          </div>
+          <div>
+            <h3 className="font-bold">Security Basics</h3>
+            <p>Used Nmap and Wireshark for network diagnostics. Set up OpenVPN server for lab practice. Applied basic firewall rules.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-2">Contact</h2>
+        <p>Email: <a className="text-blue-500" href="mailto:carlos@example.com">carlos@example.com</a></p>
+        <p>LinkedIn: <a className="text-blue-500" href="https://linkedin.com/in/carlos-saldaña">linkedin.com/in/carlos-saldaña</a></p>
+      </section>
+    </div>
+  );
+}
