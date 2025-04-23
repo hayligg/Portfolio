@@ -1,69 +1,103 @@
-export default function Portfolio() {
-  return (
-    <div className="bg-gray-50 min-h-screen p-6 text-gray-800 font-sans">
-     <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-md p-8">
-      <header className="mb-10">
-        <h1 className="text-4xl font-extrabold text-blue-800 mb-2">
-          Carlos Saldaña - Portafolio
-        </h1>
-        <p className="text-lg text-gray-700">
-          Profesional en redes con certificación CCNA y experiencia práctica en configuración de redes, prácticas de seguridad y fundamentos de la nube.
-        </p>
-      </header>
+e<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos Saldaña - Portafolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <div class="max-w-5xl mx-auto p-6">
+    <header class="mb-8 text-center">
+      <h1 class="text-4xl font-bold">Carlos Saldaña – Network | Cloud | Security Engineer</h1>
+      <p class="mt-2 text-lg text-gray-600">"Diseño redes, protejo sistemas y despliego soluciones en la nube."</p>
+    </header>
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold text-blue-700 mb-4">Certificaciones</h2>
-        <ul className="list-disc list-inside space-y-1 text-gray-700">
-          <li>Cisco Certified Network Associate (CCNA)</li>
-          <li>Google IT Support Certificate</li>
-          <li>Cisco IT Customer Support Basics Certificate</li>
-          <li>Cisco Introduction to Cybersecurity Certificate</li>
-          <li>AWS Cloud Practitioner Essentials (en progreso)</li>
-        </ul>
-      </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2">Sobre mí</h2>
+      <p>Profesional certificado en redes (CCNA) con conocimientos sólidos en fundamentos de la nube (AWS/GCP), ciberseguridad básica y experiencia práctica en configuración de redes, sistemas operativos y simulaciones de infraestructura.</p>
+    </section>
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-bold text-blue-700 mb-4">Resumen de Habilidades</h2>
-        <ul className="grid grid-cols-2 gap-x-4 list-disc list-inside text-gray-700">
-          <li>TCP/IP, VLANs, Subnetting</li>
-          <li>Routing Estático y Dinámico</li>
-          <li>ACLs, NAT</li>
-          <li>Routers y Switches Cisco (Packet Tracer / GNS3)</li>
-          <li>Firewalls (conceptos básicos)</li>
-          <li>Ubuntu Server, Windows Server (configuración básica)</li>
-          <li>AWS/GCP (conceptos básicos de nube)</li>
-          <li>Wireshark, Nmap, Netcat</li>
-          <li>Seguridad: VPNs, Endurecimiento básico</li>
-        </ul>
-      </section>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2">Certificaciones</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Cisco Certified Network Associate (CCNA)</li>
+        <li>Google IT Support Certificate</li>
+        <li>Cisco: Introduction to Cybersecurity</li>
+        <li>Cisco: IT Customer Support</li>
+        <li>AWS Cloud Practitioner Essentials <em>(en progreso)</em></li>
+      </ul>
+    </section>
 
-      <section className="mb-6">
-        <h2 className="text-2xl font-semibold mb-2">Proyectos</h2>
-        <div className="space-y-4">
-          <div>
-            <h3 className="font-bold">Network Simulation Lab (CCNA Practice)</h3>
-            <p>Designed and configured a small office network using Cisco Packet Tracer. Implemented VLANs, inter-VLAN routing, DHCP, and ACLs. Configured RIP and OSPF.</p>
-          </div>
-          <div>
-            <h3 className="font-bold">Ubuntu Server Project</h3>
-            <p>Installed and configured Ubuntu Server in a VM. Set up static IP, SSH, and UFW firewall. Tested file sharing and local DNS resolution.</p>
-          </div>
-          <div>
-            <h3 className="font-bold">CCTV and VoIP Setup (Real-World Experience)</h3>
-            <p>Installed and maintained IP cameras. Handled LAN routing and basic connectivity for CCTV and VoIP systems.</p>
-          </div>
-          <div>
-            <h3 className="font-bold">Security Basics</h3>
-            <p>Used Nmap and Wireshark for network diagnostics. Set up OpenVPN server for lab practice. Applied basic firewall rules.</p>
-          </div>
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2">Habilidades Técnicas</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full table-auto border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="border border-gray-300 px-4 py-2">Redes</th>
+              <th class="border border-gray-300 px-4 py-2">Seguridad</th>
+              <th class="border border-gray-300 px-4 py-2">Cloud</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">TCP/IP, VLANs, ACLs</td>
+              <td class="border border-gray-300 px-4 py-2">VPN, Firewall UFW</td>
+              <td class="border border-gray-300 px-4 py-2">EC2, S3, IAM (AWS)</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Routing (RIP, OSPF)</td>
+              <td class="border border-gray-300 px-4 py-2">Nmap, Wireshark</td>
+              <td class="border border-gray-300 px-4 py-2">Ubuntu Server en la nube</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">NAT, Subnetting</td>
+              <td class="border border-gray-300 px-4 py-2">Hardening básico</td>
+              <td class="border border-gray-300 px-4 py-2">GCP Networking (intro)</td>
+            </tr>
+            <tr>
+              <td class="border border-gray-300 px-4 py-2">Packet Tracer, GNS3</td>
+              <td class="border border-gray-300 px-4 py-2">OpenVPN</td>
+              <td class="border border-gray-300 px-4 py-2">CLI & SSH</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-2">Proyectos Destacados</h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="font-bold text-lg">1. Laboratorio CCNA: Red de oficina simulada</h3>
+          <p>Configuración con Packet Tracer: VLANs, inter-VLAN routing, ACLs, OSPF y RIP.</p>
+          <a href="#" class="text-blue-600 hover:underline">🔗 Ver repositorio</a>
         </div>
-      </section>
+        <div>
+          <h3 class="font-bold text-lg">2. Servidor Ubuntu con seguridad básica</h3>
+          <p>Configuración de SSH, UFW, DNS local y compartición de archivos (VM/EC2).</p>
+          <a href="#" class="text-blue-600 hover:underline">🔗 Ver guía paso a paso</a>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg">3. Laboratorio de Seguridad en Red</h3>
+          <p>Prácticas con Nmap, Wireshark, Netcat y OpenVPN.</p>
+          <a href="#" class="text-blue-600 hover:underline">🔗 Ver ejercicios</a>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg">4. Web personal en AWS/GitHub Pages</h3>
+          <p>Deploy de portafolio usando GitHub Pages y S3, con seguridad básica IAM.</p>
+          <a href="https://tusitio.com" class="text-blue-600 hover:underline">🔗 Visitar website</a>
+        </div>
+      </div>
+    </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold mb-2">Contact</h2>
-        <p>Email: <a className="text-blue-500" href="mailto:c.a.saldana20@gmail.com">c.a.saldana20@gmail.com</a></p>
-        <p>LinkedIn: <a className="text-blue-500" href="https://linkedin.com/in/carlos-saldaña-candanedo-720426183">linkedin.com/in/carlos-saldaña-candanedo-720426183</a></p>
-      </section>
-    </div>
-  );
-}
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">Contacto</h2>
+      <p>Email: <a class="text-blue-500" href="mailto:c.a.saldana20@gmail.com">c.a.saldana20@gmail.com</a></p>
+      <p>LinkedIn: <a class="text-blue-500" href="https://linkedin.com/in/carlos-saldaña-candanedo-720426183">linkedin.com/in/carlos-saldaña</a></p>
+      <p>GitHub: <a class="text-blue-500" href="https://github.com/hayligg">github.com/hayligg</a></p>
+    </section>
+  </div>
+</body>
+</html>
